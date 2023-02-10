@@ -52,6 +52,6 @@ app.post("/", function(req, res){
 
 // app id 42e076a864c88ea26ca4e45d1bf1e09e-us21
 //list id 21ad3021cd
-app.listen(3000, function(){
+app.listen(3000 || process.env.PORT, function(){
     console.log("server is running");
 })
